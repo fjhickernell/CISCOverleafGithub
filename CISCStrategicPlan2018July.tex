@@ -1,32 +1,39 @@
-\documentclass{amsart}
+\documentclass[12pt]{amsart}
 
-\usepackage{booktabs}
+\usepackage{booktabs, hyperref}
+\usepackage[dvipsnames]{xcolor}
+
 
 \textwidth 6.5 in
 \textheight 9 in
 \hoffset -0.8 in
 \voffset -0.5 in
 
+\newcommand{\FJHNote}[1]{{\textcolor{blue}{FJH: #1}}}
+\newcommand{\DMNote}[1]{{\textcolor{green}{DM: #1}}}
+\newcommand{\MCNote}[1]{{\textcolor{orange}{MC: #1}}}
+\newcommand{\SCCNote}[1]{{\textcolor{magenta}{SCC: #1}}}
+
 
 \begin{document}
-\title{Center for Interdisciplinary Scientific Computation \\ Strategic Plan}
+\FJHNote{This is Fred's note}, \MCNote{This is Maggie's note}, and \DMNote{This is David's note}.
+
+\title[Center for Interdisciplinary Scientific Computation Strategic Plan]{Center for Interdisciplinary Scientific Computation \\ Strategic Plan}
 \date{August 1, 2018}
 \maketitle
 
 
-
-
 To fulfill Illinois Tech's mission, ``To provide distinctive and relevant education in an environment of scientific, technological, and professional knowledge creation and innovation," we must strengthen and leverage our expertise in computation as tool for discovery.  The Center for Interdisciplinary Scientific Computation (CISC) is poised to play a key role. Here we summarize our history, purpose, past and future activities, and proposed funding sources.
 
-Computation, alongside theory and experiment, is a crucial element in explaining phenomena, predicting what has not yet been observed, and optimizing performance.  Scientific computation draws upon multiple disciplines, including
+Computation, alongside theory and experiment, is a crucial element in explaining phenomena, predicting what has not yet been observed, and optimizing performance.  Today, scientific computation spans the spectrum from simulation science to data science. Scientific computation draws upon multiple disciplines, including
 \begin{itemize}
     \item Science and engineering domain knowledge to ensure that the problems posed are relevant and that the answers computed are significant,
     \item Computer science for novel algorithms, computational software, and hardware architectures that facilitate efficient and reliable computation, and
     \item Mathematical sciences for the framework justifying computational procedures and making inferences from data.
 \end{itemize}
-Thus, at Illinois Tech scientific computation is not owned or led by a single department, but is fostered through an interdisciplinary center.
+Thus, at Illinois Tech scientific computation cannot be owned or led by a single department, but is fostered through an interdisciplinary center.
 
-Illinois Tech's expertise in scientific computation lies in all College of Science Departments as well as in other Illinois Tech colleges, schools and departments.  Following a long term discussion, CISC was established in May of 2017 to leverage this expertise for greater impact.  Fred Hickernell, Professor of Applied Mathematics was appointed as director.  Professor Hickernell's research in computational mathematics and statistics has been funded by the National Science Foundation and the Department of Energy.  In the spring of 2018, David Minh, Assistant Professor of Chemistry, was appointed Associate Director.  Professor Minh's research in ??? has been funded by ???.  The CISC Advisory Board is comprised of 
+\subsection*{Background.} Illinois Tech's expertise in scientific computation lies in all College of Science Departments as well as in other Illinois Tech colleges, schools and departments.  Following a long term discussion, CISC was established in May of 2017 to leverage this expertise for greater impact.  Fred Hickernell, Professor of Applied Mathematics was appointed as director.  Professor Hickernell's research in computational mathematics and statistics has been funded by the National Science Foundation and the Department of Energy.  In the spring of 2018, David Minh, Assistant Professor of Chemistry, was appointed Associate Director.  Professor Minh's research in \FJHNote{David, please fill in} ??? has been funded by ???.  The CISC Advisory Board is comprised of 
 \begin{itemize}
     \item Professor Grant Bunker, Chair of the Department of Physics, 
     \item Professor John Georgiadis, Chair of  the Department and R. A. Pritzker Professor of Biomedical Engineering,
@@ -39,48 +46,121 @@ Nambury S. Raju Professor of Psychology,
     \item Professor Xian-He Sun, Distinguished Professor of Computer Science.
 \end{itemize}
 
-\textbf{Vision.}
+\subsection*{Vision.}
 CISC will be a national and international center of excellence in scientific computation underpinning and catalyzing multiple research and educational activities at Illinois Tech within the university, in Chicago, and beyond.
 
-\textbf{Mission.}
+\subsection*{Mission.}
 To intensify computationally-driven scholarship and education, across the College of Science, Illinois Tech as a whole, and in greater Chicagoland.  This may lead to major scientific advances not otherwise possible.
 
-\textbf{Goals.}
+\subsection*{Goals.}
 To fulfill its mission, CISC initiates and promotes programs to enhance research, education, and community engagement.  Our goals are the following:
 \begin{itemize}
-    \item Attract substantial external funding to support major research initiatives,
+    \item Attract substantial external funding to support major \emph{research},
     
-    \item Develop a comprehensive scientific computation curriculum,
+    \item Develop comprehensive and multi-pronged scientific computation \emph{education},
 
-    \item Strengthen Illinois Tech’s research computing infrastructure, and
+    \item Strengthen Illinois Tech's research computing \emph{infrastructure}, and
     
-    \item Engage the community.
+    \item Engage the \emph{community}.
     
 \end{itemize}
+We expect to see substantial progress within a three-year time horizon.
 
-To increase our competitive edge for external funding for interdisciplinary computational projects, we instituted a series of \emph{lunchtime matchmaking seminars} in the fall of 2017.  Each seminar featured two professors highlighting their computational research and the areas for potential collaboration.  Four applied mathematicians, two biologists, two biomedical engineers, a business faculty, a chemical and biological engineers, two chemists, two computer scientists,  a mechanical engineer, a physicist, and a psychologist spoke during the 2017--2018 academic year.  
+\FJHNote{David, please fill in observations from our survey in the paragraphs below as appropriate.}
 
-While expecting to continue this series, we also want to facilitate the next step in collaboration by offering more substantial support to kickstart interdisciplinary collaborations.  We propose to offer \emph{summer research student stipends} to students supervised by faculty from more than one department.  These would be awarded based on the prospects of the summer work leading to a new interdisciplinary computational science proposal for external funding. 
+\subsection*{Research.} We expect to have at least a handful of externally funded major interdisciplinary scientific computation research programs at any time, with the particular themes depending our expertise and on the priorities of funding agencies.  A main weakness in competing for external funding for scientific computation research is our ignorance of what others in our own institution are doing and our lack of experience discussing problems across disciplinary boundaries.  CISC has and will take measures to overcome this weakness.
 
-Last fall we called for interdisciplinary \emph{seed grant} proposals to fund research in the 2018 calendar year leading to new external funding proposals in scientific computation.  Members of the Advisory Board reviewed the proposals and awarded a \$40K seed grant to Lulu Kang, Sonja Petrovi\'c, and Mahima Saxena. Part of the funding was for teaching relief and part for student support.  We would like to continue this on an annual basis.  We give the applicants latitude in proposing how use the funds.  For example, seed grants might also be used for partial post-doctoral scholar support.  The primary criterion for selection is the greatest prospect of leading to a successful proposal for external funding.
+To promote interdisciplinary collaboration on computational projects, we instituted a series of \emph{lunchtime matchmaking seminars} in the fall of 2017.  Each seminar featured two professors highlighting their computational research and the areas for potential collaboration.  Four applied mathematicians, two biologists, two biomedical engineers, a business faculty, a chemical and biological engineers, two chemists, two computer scientists,  a mechanical engineer, a physicist, and a psychologist spoke during the 2017--2018 academic year.  
 
-In addition to the 
+While continuing this series, we also want to facilitate the next step toward externally funded research by offering more substantial support to kickstart interdisciplinary collaborations.  We propose to offer \emph{summer research student stipends} to students supervised by faculty from more than one department.  These would be awarded based on the prospects of the summer work leading successful external funding of new interdisciplinary computational science research. 
 
-\textbf{Resources.}
+In the fall of 2017, we invited interdisciplinary \emph{seed grant} proposals to fund research in the 2018 calendar year leading to new external funding proposals in scientific computation.  Members of the Advisory Board reviewed the proposals and awarded a \$40K seed grant to Lulu Kang, Sonja Petrovi\'c, and Mahima Saxena. The funds were earmarked for teaching relief, data collection, and conference travel.  We plan to continue this seed grant competition on an annual basis.  Applicants are given latitude in proposing how use the funds.  For example, seed grants might be used for partial post-doctoral scholar support.  The primary criterion for selection is the greatest prospect of future external funding of new initiatives.
 
-\textbf{Membership.} 
+CISC has sponsored a few \emph{guest lectures} given by scholars leading major large scale computation projects.  Our aim is to open the eyes of colleagues and students to what might be done.  Two of these guest lecturers were from the nearby \emph{Department of Energy labs}.  CISC hopes to strengthen our collaboration with these labs, which have access to advanced hardware and can provide valuable experience to our students. 
 
+\subsection*{Education}Our scientific computation students are typically educated within their disciplinary silos, i.e., they are educated as computational biologists, computational chemists, computational mathematicians, computational physicists, or computer scientists.  Moreover, many students only gain experience with single CPU computation. We want to provide a richer experience for our students.
 
-\textbf{Annual Budget.} 
+In early 2018, CISC submitted an NSF \emph{training grant} proposal entitled \emph{Cross-Disciplinary Education for Next-Generation Computational Scientists} to the Office of Advanced Cyberinfrastructure. The (Co-)PIs are Sou-Cheng Choi (Allstate), Hickernell, Minh, Sun, and Jeff Wereszczynski (physics), and Norm Lederman (science education) is a senior personnel.  A theme of this proposal is breaking down silos.  If funded, CISC will 
+\begin{itemize}
+    \item Place scientific computation students in research groups outside their disciplines so that they may learn how to think in new ways and work in interdisciplinary teams, some of these might be at government labs;
+    
+    \item Develop new scientific computation courses offered in various departments that can be taken by students from multiple disciplines, these courses will stress the use of high performance architectures, good professional practices of developing software for reproducible research, and scientific applications;
+    
+    \item Promote graduate theses incorporating advanced cyberinfrastructure; and
+    
+    \item Offer scientific computation research experiences for community college students and high school students.
 
-\begin{tabular}{l@{\qquad} r}
+\end{itemize}
+The proposal---under review---includes partnerships with Argonne, College of DuPage, Fermilab, and Illinois Tech's Admissions Office.
+
+We plan to continue to apply for training grants to support our aim of building a strong interdisciplinary scientific computation education for high school through PhD students.  Possible sources of funding include \FJHNote{Maggie help us out here.}
+
+\subsection*{Infrastructure.} The Office of Technology Services (OTS) has turned its attention to research computing in the recent couple of years.  Illinois Tech has established gridIIT, our part of the Open Science Grid (\href{http://opensciencegrid.org}{\nolinkurl{opensciencegrid.org}}).  The Office of Technology Services has also been searching for ways to accommodate the computer clusters acquired through external grants.  
+
+CISC intends to partner with OTS and the Illinois Tech administration to support scientific computation research in ways that individual faculty or departments cannot do on their own.  We are compiling a database of licenses held for major software packages used in scientific computation (\href{http://bit.ly/2LrQC4T}{\nolinkurl{bit.ly/2LrQC4T}}),  such as ABAQUS, ADF, and Gaussian.  The 256 node von Neumann cluster, purchased by the College of Science and managed by CISC, is on gridIIT and available for use campus wide.  Many scientific computation researchers would like to take advantage of available high performance computing resources, but the learning curve is steep.  We are in dialogue with OTS on how to flatten the curve by making templates and other training materials available for using gridIIT.  Wereszczynski is the campus champion for XSEDE (\href{https://www.xsede.org}{\nolinkurl{www.xsede.org}}), which we would like to see more of our faculty taking advantage of.
+
+Community outreach
+
+\subsection*{Membership.} 
+Up to now CISC has had no formal membership.  We will begin inviting faculty to join as \emph{CISC Affiliates}, starting with those who have participated in past CISC activities.  CISC Affiliates will be asked to indicate their experience in scientific computation and how they plan to be engaged in CISC, e.g. submitting grants associated with CISC, offering lectures or tutorials, or participating in curriculum development. The number of potential CISC Affiliates, i.e., faculty involved in scientific computation, is several dozen.  
+
+\subsection*{Budget.}
+The initial CISC annual budget required to support our proposed activity is 
+\begin{center}
+    \begin{tabular}{p{0.57\textwidth}@{\qquad} r}
 \textbf{Item} & \textbf{Annual Expense in \$K} \\
 \toprule
-    Seed grant 2 @ \$40K each & 80 \\
+    Seed grant  & 40 \\
     Summer research student stipends 3 @ \$7K each & 21 \\
+    Cluster hardware upgrades & 30 \\
     Lunchtime matchmaking seminars & 2 \\
-    Student helper 30 weeks $\times$ 5 hours/week $\times$ \$15/hour & 7
+    Special lectures & 2 \\
+    Student helper 30 weeks $\times$ 5 hours/week $\times$ \$15/hour & 7 \\
+    Office expenses and other miscellany & 5 \\
+    \bottomrule
+    \emph{Total} & 107
 \end{tabular}
+\end{center}
+This does not include teaching relief and administrative increment for the Director and Associate Director, which are presently supported by the College of Science.  As additional funds become available we would like to add 
+\begin{center}
+    \begin{tabular}{p{0.57\textwidth}@{\qquad} r}
+\textbf{Item} & \textbf{Annual Expense in \$K} \\
+\toprule
+    Additional seed grant  & 40 \\
+    Conference sponsorship & 10 \\
+    \bottomrule
+    \emph{Total} & 50
+\end{tabular}
+\end{center}
+
+\subsection*{Financial Resources.}
+We aim to have stable income of at least \$160K per year within three years.
+There are several potential sources of income to support CISC.  
+
+One is an \emph{endowment}.  We were under the impression that donors with substantial means were willing to support CISC until spring 2017, when it became clear otherwise.  We are eager to work with Institutional Advancement to approach potential donors to build an endowment.  We would also seek an endowed professorship for the next CISC director, also within three years.
+
+Another potential source of income is the \emph{university's recurring budget}.  The College of Science supported CISC at a level of \$50K in the 2017-18 fiscal year, which was used to support the \$40K seed grant and various other CISC activities.
+
+As highlighted under our goals, CISC is eager to partner with \emph{research} groups seeking external funding for major scientific computation projects.  We believe that CISC participation, with its infrastructure, will strengthen research proposals.  However, CISC's research scope is too broad for its activities in support of research to be externally funded.  We will compete for external \emph{training and education} grants, but these will not support much of the annual expenses outlined above.
+
+We propose that a portion of the \emph{indirect costs} associated with all grants submitted in association with CISC be returned to CISC to support its annual expenses.  The advantages of this proposal are:
+\begin{itemize}
+    \item CISC is incentivized to support activities that lead to successful external proposals.
+    
+    \item Principal investigators (PIs) are incentivized to affiliate their proposals with CISC, knowing if successful, a portion of the indirect costs will be available to prime the pump for future proposals.  This assumes that the portion of indirect costs going to CISC does not affect the portion returned to the PI.
+    
+    \item The more successful CISC and our faculty are, the less CISC will rely on the recurrent university budget, and the more indirect costs will flow to the university.
+\end{itemize}
+This model is new to Illinois Tech and requires effort to be implemented.
+
+
+\subsection*{Long Term Plans.}
+The CISC name and this strategic plan mention ``scientific computation'' and omit ``engineering''.  CISC was founded and initially resourced out of the College of Science.  However, from the beginning we have not limited our scope to science only, but have welcomed engineering and other disciplines.  Dean of Science Russell Betts appointed two members of our Advisory Board from outside science in consultation with their deans.  Faculty and students outside of science have participated in our activities.
+
+Our plan is that within five years CISC to grow into or become part of a university-wide institute that would promote computational science, engineering, human sciences, and business.  This proposed institute would engage multiple disciplines.  We hope that Provost Kilpatrick will work with the deans and us to make that a reality.  Illinois Tech should be known as a leader in computation.
+
+
+
 
 
 
